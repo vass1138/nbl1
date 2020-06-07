@@ -1,0 +1,80 @@
+ROUND,DATE,HOME TEAM,VISITOR,WOMEN,MEN,VENUE
+10,Fri 26 Jun,Hobart Chargers,Diamond Valley Eagles,6:00pm,8:00pm,CREEK
+10,Sat 27 Jun,Ballarat Rush/Miners,Knox Raiders,6:00pm,8:00pm,BALL
+10,Sat 27 Jun,Eltham Wildcats,Geelong Supercats,6:00pm,8:00pm,ELTH
+10,Sat 27 Jun,Frankston Blues,Bendigo Braves,5:30pm,7:30pm,FRNK
+10,Sat 27 Jun,Kilsyth Cobras,Sandringham Sabres,5:30pm,7:30pm,KILS
+10,Sat 27 Jun,Launceston/NW Thunder,Diamond Valley Eagles,6:30pm,7:30pm,ELPH/OBC
+10,Sat 27 Jun,Mt Gambier Pioneers,Dandenong Rangers,6:30pm,8:30pm,ICE
+10,Sat 27 Jun,Nunawading Spectres,Albury Wodonga Bandits,5:30pm,7:30pm,NUNA
+10,Sun 28 Jun,Bendigo Braves,Ringwood Hawks ,12:00pm,2:00pm,BEND
+10,Sun 28 Jun,Sandringham Sabres,Melbourne Tigers ,12:30pm,2:30pm,SBA
+10,Sun 28 Jun,Waverley Falcons,Albury Wodonga Bandits ,12:00pm,2:00pm,WAV
+11,Wed 1 Jul,Ballarat Rush/Miners,Geelong Supercats FINAL,6:00pm,8:00pm,BALL
+11,Wed 1 Jul,Ringwood Hawks,Knox Raiders,6:00pm,8:00pm,NSC
+11,Fri 3 Jul,Eltham Wildcats,Albury Wodonga Bandits,6:00pm,8:00pm,ELTH
+11,Fri 3 Jul,Hobart Chargers,Nunawading Spectres,6:00pm,8:00pm,CREEK
+11,Sat 4 Jul,Diamond Valley Eagles,Ballarat Rush/Miners,6:00pm,8:00pm,DIAM
+11,Sat 4 Jul,Frankston Blues,Ringwood Hawks,5:30pm,7:30pm,FRNK
+11,Sat 4 Jul,Geelong Supercats,Bendigo Braves,5:00pm,7:00pm,GEEL
+11,Sat 4 Jul,Kilsyth Cobras,Dandenong Rangers,5:30pm,7:30pm,KILS
+11,Sat 4 Jul,Knox Raiders,Sandringham Sabres,5:30pm,7:30pm,SBC
+11,Sat 4 Jul,Launceston/NW Thunder,Nunawading Spectres,6:00pm,8:00pm,ELPH
+11,Sat 4 Jul,Mt Gambier Pioneers,Albury Wodonga Bandits,6:30pm,8:30pm,ICE
+11,Sun 5 Jul,Dandenong Rangers,Bendigo Braves ,12:00pm,2:00pm,DAND
+11,Sun 5 Jul,Ringwood Hawks,Kilsyth Cobras ,12:00pm,2:00pm,RING
+11,Sun 5 Jul,Sandringham Sabres,Diamond Valley Eagles ,12:30pm,2:30pm,SBA
+11,Sun 5 Jul,Waverley Falcons,Melbourne Tigers ,12:00pm,2:00pm,WAV
+12,Fri 10 Jul,Geelong Supercats,Mt Gambier Pioneers,6:00pm,8:00pm,GEEL
+12,Fri 10 Jul,Ringwood Hawks,Dandenong Rangers,6:00pm,8:00pm,NSC
+12,Sat 11 Jul,Albury Wodonga Bandits,Hobart Chargers,6:00pm,8:00pm,LJSC
+12,Sat 11 Jul,Ballarat Rush/Miners,Bendigo Braves,6:00pm,8:00pm,BALL
+12,Sat 11 Jul,Diamond Valley Eagles,Frankston Blues,6:00pm,8:00pm,DIAM
+12,Sat 11 Jul,Eltham Wildcats,Melbourne Tigers,6:00pm,8:00pm,ELTH
+12,Sat 11 Jul,Kilsyth Cobras,Waverley Falcons,5:30pm,7:30pm,KILS
+12,Sat 11 Jul,Knox Raiders,Launceston/NW Thunder,5:30pm,7:30pm,SBC
+12,Sat 11 Jul,Mt Gambier Pioneers,Sandringham Sabres,6:30pm,8:30pm,ICE
+12,Sat 11 Jul,Nunawading Spectres,Geelong Supercats,5:30pm,7:30pm,NUNA
+12,Sun 12 Jul,Frankston Blues,Kilsyth Cobras ,12:30pm,2:30pm,FRNK
+12,Sun 12 Jul,Melbourne Tigers,Launceston/NW Thunder ,12:30pm,2:30pm,MSAC
+12,Sun 12 Jul,Waverley Falcons,Hobart Chargers ,12:00pm,2:00pm,WAV
+14,Fri 24 Jul,Hobart Chargers,Ringwood Hawks,6:00pm,8:00pm,CREEK
+14,Sat 25 Jul,Albury Wodonga Bandits,Knox Raiders,6:00pm,8:00pm,LJSC
+14,Sat 25 Jul,Bendigo Braves,Kilsyth Cobras,5:30pm,7:30pm,BEND
+14,Sat 25 Jul,Eltham Wildcats,Dandenong Rangers,6:00pm,8:00pm,ELTH
+14,Sat 25 Jul,Launceston/NW Thunder,Ringwood Hawks,6:30pm,7:30pm,ELPH/OBC
+14,Sat 25 Jul,Nunawading Spectres,Melbourne Tigers,5:30pm,7:30pm,NUNA
+14,Sat 25 Jul,Sandringham Sabres,Mt Gambier Pioneers,5:00pm,7:00pm,SBA
+14,Sun 26 Jul,Ballarat Rush/Miners,Eltham Wildcats ,12:00pm,2:00pm,BALL
+14,Sun 26 Jul,Diamond Valley Eagles,Mt Gambier Pioneers ,12:00pm,2:00pm,DIAM
+14,Sun 26 Jul,Geelong Supercats,Frankston Blues ,12:00pm,2:00pm,GEEL
+14,Sun 26 Jul,Waverley Falcons,Nunawading Spectres ,12:00pm,2:00pm,WAV
+15,Fri 31 Jul,Bendigo Braves,Knox Raiders,6:00pm,8:00pm,BEND
+15,Fri 31 Jul,Geelong Supercats,Ballarat Rush/Miners,6:00pm,8:00pm,GEEL
+15,Fri 31 Jul,Hobart Chargers,Waverley Falcons,6:00pm,8:00pm,CREEK
+15,Sat 1 Aug,Albury Wodonga Bandits,Bendigo Braves,6:00pm,8:00pm,LJSC
+15,Sat 1 Aug,Ballarat Rush/Miners,Dandenong Rangers,6:00pm,8:00pm,BALL
+15,Sat 1 Aug,Diamond Valley Eagles,Melbourne Tigers,6:00pm,8:00pm,DIAM
+15,Sat 1 Aug,Frankston Blues,Sandringham Sabres,5:30pm,7:30pm,FRNK
+15,Sat 1 Aug,Kilsyth Cobras,Ringwood Hawks,5:30pm,7:30pm,KILS
+15,Sat 1 Aug,Knox Raiders,Geelong Supercats,5:30pm,7:30pm,SBC
+15,Sat 1 Aug,Launceston/NW Thunder,Waverley Falcons,6:00pm,8:00pm,OBC
+15,Sat 1 Aug,Mt Gambier Pioneers,Eltham Wildcats,6:30pm,8:30pm,ICE
+15,Sun 2 Aug,Melbourne Tigers,Frankston Blues ,12:30pm,2:30pm,MSAC
+15,Sun 2 Aug,Nunawading Spectres,Kilsyth Cobras,1:30pm,3:30pm,NUNA
+16,Sat 8 Aug,Bendigo Braves,Launceston/NW Thunder,5:30pm,7:30pm,BEND
+16,Sat 8 Aug,Diamond Valley Eagles,Dandenong Rangers,6:00pm,8:00pm,DIAM
+16,Sat 8 Aug,Geelong Supercats,Ringwood Hawks,5:00pm,7:00pm,GEEL
+16,Sat 8 Aug,Kilsyth Cobras,Hobart Chargers,5:30pm,7:30pm,KILS
+16,Sat 8 Aug,Mt Gambier Pioneers,Frankston Blues,6:30pm,8:30pm,ICE
+16,Sat 8 Aug,Sandringham Sabres,Albury Wodonga Bandits,5:00pm,7:00pm,SBA
+16,Sun 9 Aug,Ballarat Rush/Miners,Launceston/NW Thunder ,12:00pm,2:00pm,BALL
+16,Sun 9 Aug,Dandenong Rangers,Albury Wodonga Bandits ,12:00pm,2:00pm,DAND
+16,Sun 9 Aug,Eltham Wildcats,Sandringham Sabres,1:00pm,3:00pm,ELTH
+16,Sun 9 Aug,Melbourne Tigers,Knox Raiders ,12:30pm,2:30pm,MSAC
+16,Sun 9 Aug,Nunawading Spectres,Hobart Chargers,1:30pm,3:30pm,NUNA
+16,Sun 9 Aug,Waverley Falcons,Diamond Valley Eagles ,12:00pm,2:00pm,WAV
+91,Qualifying / Elimination 14-16 Aug,Qualifying,Qualifying / Elimination,TBC,TBC,TBC
+92,Semi Finals,21-22 Aug,Semi Finals,TBC,TBC,TBC
+93,Preliminary Finals,Sun 23 Aug,Preliminary Finals,TBC,TBC,TBC
+94,Championship Games,Sat 29 Aug,Championship Games,5:00pm,8:00pm,SBC

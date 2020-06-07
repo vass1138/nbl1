@@ -1,0 +1,17 @@
+https://www.fibalivestats.com/data/1110838/data.json
+https://www.fibalivestats.com/data/1476977/data.json
+
+# 2019
+https://www.fibalivestats.com/data/competition/23703.json
+
+# 2020
+https://www.fibalivestats.com/data/competition/26690.json
+
+https://nbl1.com.au/api/v1/team/getstats?splits=&page=1&competitionId=23703&limit=20&full=1
+https://nbl1.com.au/api/v1/team/getstats?splits=&page=1&competitionId=23703&limit=20&full=1
+
+https://nbl1.com.au/api/v1/players/leaderboard?competitionId=23703&page=1&limit=20
+https://nbl1.com.au/api/v1/players/leaderboard?competitionId=23704&page=1&limit=20
+
+# game data
+https://www.fibalivestats.com/data/1111022/data.json

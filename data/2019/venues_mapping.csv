@@ -1,0 +1,29 @@
+venue_id,venue_name,a.team_name,a.team_code,b.team_name,b.team_code,home_team_code
+1858,Lauren Jackson Sports Centre,Albury Wodonga,ALB,Bendigo,BEN,ALB
+1867,Bendigo Stadium,Albury Wodonga,ALB,Bendigo,BEN,BEN
+1889,Frankston Basketball Stadium,Ballarat,BLM,Frankston,FRA,FRA
+1899,Keilor Basketball Stadium,Launceston,LAU,BA COE,COE,ZZZ
+1900,Kilsyth Sports Centre,Bendigo,BEN,Kilsyth,KIL,KIL
+1946,State Basketball Centre,Ballarat,BLM,Knox,KNX,KNX
+21402,Dandenong Basketball Stadium,Bendigo,BEN,Dandenong,DAN,DAN
+21404,Geelong Arena,Bendigo,BEN,Geelong,GEE,GEE
+21405,The Rings,Bendigo,BEN,Ringwood,RIN,RIN
+21406,MSAC,Albury Wodonga,ALB,Melbourne,MEL,MEL
+21407,Waverley Basketball Centre,BA COE,COE,Waverley,WAV,WAV
+21408,Mars® Minerdome,Albury Wodonga,ALB,Ballarat,BLM,BLM
+21408,Mars® Minerdome,Albury Wodonga,ALB,Ballarat,BLR,BLR
+21409,Kingborough Basketball Stadium,Albury Wodonga,ALB,Hobart,HOB,HOB
+21409,Kingborough Basketball Stadium,Albury Wodonga,ALB,Hobart,SOU,SOU
+21410,DV Sports &amp; Fitness Centre,Albury Wodonga,ALB,Diamond Valley,DIV,DIV
+21411,Ulverstone/Elphin,Albury Wodonga,ALB,NW Tasmania,NWT,NWT
+21411,Ulverstone/Elphin,Albury Wodonga,ALB,Launceston,LAU,LAU
+21412,Nunawading Basketball Centre,Bendigo,BEN,Nunawading,NUN,NUN
+21413,Eltham High School,Bendigo,BEN,Eltham,ELT,ELT
+21414,Elphin Stadium (double header),Launceston,LAU,Nunawading,NUN,LAU
+21414,Elphin Stadium (double header),Melbourne,MEL,NW Tasmania,NWT,NWT
+21415,Southern Basketball Stadium,Albury Wodonga,ALB,Southern,SAN,SAN
+21416,MSAC (Court 1),Frankston,FRA,Melbourne,MEL,MEL
+21417,AIS,BA COE,COE,Geelong,GEE,COE
+21418,Ulverstone Stadium (double header),Dandenong,DAN,NW Tasmania,NWT,NWT
+21418,Ulverstone Stadium (double header),Dandenong,DAN,Launceston,LAU,LAU
+21824,Boroondara Sports Complex,Hobart,HOB,BA COE,COE,ZZZ
