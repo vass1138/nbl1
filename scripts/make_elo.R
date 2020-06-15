@@ -29,11 +29,21 @@ elo_model <- function(train_data,train_gender,train_margin_lo,train_margin_hi,te
   games_train <- train_data %>%
     filter(gender==train_gender,thisround!=test_round)
 
+  # NBA advantage about 2.5-3.5
   elo.data <- elo.run(
     map_margin_to_outcome(margin,train_margin_lo,train_margin_hi) ~ adjust(home.team_code, HGA) + away.team_code,
     k = k_val,
     data = games_train
   )
+  
+  # https://cran.r-project.org/web/packages/elo/vignettes/elo.html
+  # update proportional log of win margin
+  # elo.run(score(points.Home, points.Visitor) ~ team.Home + team.Visitor +
+  #           k(20*log(abs(points.Home - points.Visitor) + 1)), data = tournament)
+  # 
+  # different k values for home and away teams
+  # k1 <- 20*log(abs(tournament$points.Home - tournament$points.Visitor) + 1)
+  # elo.run(score(points.Home, points.Visitor) ~ team.Home + team.Visitor + k(k1, k1/2), data = tournament)
   
   #
   as.data.frame(elo.data)
@@ -105,7 +115,7 @@ elo.men <- elo_model(games,"MALE",margin_men_lo,margin_men_hi,8)
 as.data.frame(elo.men)
 
 elo.men.final <- final.elos(elo.men)
-elo.men.df <- cbind(read.table(text = names(elo.men.final)),foo)
+elo.men.df <- cbind(read.table(text = names(elo.men.final)),elo.men.final)
 colnames(elo.men.df) <- c("code","elo")
 
 # Prediction: Men
@@ -122,7 +132,7 @@ elo.women <- elo_model(games,"FEMALE",margin_women_lo,margin_women_hi,8)
 as.data.frame(elo.women)
 
 elo.women.final <- final.elos(elo.women)
-elo.women.df <- cbind(read.table(text = names(elo.women.final)),foo)
+elo.women.df <- cbind(read.table(text = names(elo.women.final)),elo.women.final)
 colnames(elo.women.df) <- c("code","elo")
 
 # Prediction: Women

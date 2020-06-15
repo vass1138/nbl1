@@ -49,7 +49,8 @@ players <- players %>%
   mutate(PPM = PPG/MPG,
          EFF = (PPG + RPG + APG + SPG + BPG - (FGA-FGM) - (THREEPA - THREEPM) - (FTM-FTA) - TOPG),
          POS = 0.96 * (FGA + THREEPA + TOPG + (0.44 * FTA)),
-         eFGP = (FGM + (0.5*THREEPM))/FGA)
+         eFGP = if_else(FGA==0,0,(FGM + (0.5*THREEPM))/FGA))
+
 
 # density plot for efficiency
 ggplot(players,aes(EFF,color=gender)) +
