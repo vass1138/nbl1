@@ -44,13 +44,13 @@ players <- players %>%
 # PPM = points per minute
 # EFF = efficiency
 # POS = possessions
-# eFGP = effective technical shooting percentage
+# eFGP = effective technical shooting percentage: if_else(FGA==0,0,(FGM + (0.5*THREEPM))/FGA))
+# TWOPP = two point percentage (as fraction), not included in original dataset for some reason.
 players <- players %>%
   mutate(PPM = PPG/MPG,
          EFF = (PPG + RPG + APG + SPG + BPG - (FGA-FGM) - (THREEPA - THREEPM) - (FTM-FTA) - TOPG),
          POS = 0.96 * (FGA + THREEPA + TOPG + (0.44 * FTA)),
-         eFGP = if_else(FGA==0,0,(FGM + (0.5*THREEPM))/FGA))
-
+         TWOPP = if_else(TWOPA==0,0,TWOPM/TWOPA))
 
 # density plot for efficiency
 ggplot(players,aes(EFF,color=gender)) +
@@ -58,6 +58,10 @@ ggplot(players,aes(EFF,color=gender)) +
   ggtitle("NBL1 Player Efficiency") +
   xlab("Efficiency") +
   ylab("Density")
+
+#
+#
+#
 
 get_top <- function(mydata,mygender,mycol,mycount) {
   
@@ -88,6 +92,87 @@ players.EFF <- get_top(players,"MALE","EFF",5)
 players.TOPG <- get_top(players,"MALE","TOPG",5)
 players.PGPG <- get_top(players,"MALE","PFPG",5)
 
+#
+#
+#
+
+# rank all values in all columns independently
+compute_rankings <- function(mydata,mygender) {
+  
+  # subset by gender
+  df <- mydata %>%
+    filter(gender==mygender) %>%
+    select(-FULLNAME,-teamId,-competitionId,-gender,-position,-clubName)
+
+  # rank values in individual columns
+  this_rank <- as.data.frame(lapply(df,rank,ties.method="first"))
+
+  # reverse ranking
+  this_rank <- as.data.frame(lapply(this_rank,function(x) max(x)-x+1))
+
+  # reset the primary key in the rankings dataframe
+  this_rank$personId <- df$personId
+  
+  return(this_rank)
+}
+
+#
+# rank columns all at once
+#
+
+# replace negative numbers with zero so ranking works
+players[players < 0] <- 0
+
+mrank <- compute_rankings(players,"MALE")
+
+men_final <- players %>%
+  inner_join(mrank,by="personId",suffix=c("",".rank"))
+
+wrank <- compute_rankings(players,"FEMALE")
+
+women_final <- players %>%
+  inner_join(wrank,by="personId",suffix=c("",".rank"))
+
+players_ranked <- rbind(men_final,women_final)
+
+# PowerBI data
+# write.csv(players_ranked,"players.csv")
+
+#
+# rank columns individually
+#
+
+# get the column names that include .rank
+rank_cols <- players_ranked %>%
+  select(ends_with(".rank")) %>%
+  colnames()
+
+men <- players_ranked %>%
+  filter(gender=="MALE")
+
+# rank individual columns
+for (rank_col in rank_cols) {
+  data_col <- unlist(strsplit(rank_col,"\\."))[1]
+  men[[rank_col]] <- rank(-men[[data_col]],ties="first")
+}
+
+women <- players_ranked %>%
+  filter(gender=="FEMALE")
+
+# rank individual columns
+for (rank_col in rank_cols) {
+  data_col <- unlist(strsplit(rank_col,"\\."))[1]
+  women[[rank_col]] <- rank(-women[[data_col]],ties="first")
+}
+
+players_ranked_2 <- rbind(men,women)
+
+# PowerBI data
+# write.csv(players_ranked_2,"players2.csv")
+
+#
+#
+#
 
 # league median
 median_league <- players %>% 
@@ -99,11 +184,6 @@ median_team <- players %>%
   filter(gender=="MALE") %>% 
   group_by(clubName) %>% 
   summarise_if(is.numeric,median)
-
-
-  
-
-
 
 # efficiency by club, in order of club rank
 players %>%
@@ -120,6 +200,10 @@ players %>%
     ylab("Efficiency") +
     ggtitle("NBL1 Men 2019: Efficiency by Team") +
     theme(axis.text.x = element_text(angle = 90))
+
+#
+# Exploring Nunawading (Men) 
+#
 
 # efficiency by player
 players_nun <- players %>%
